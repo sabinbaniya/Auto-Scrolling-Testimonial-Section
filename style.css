@@ -1,0 +1,79 @@
+.slider {
+  height: 90vh;
+  display: flex;
+  justify-items: center;
+  align-items: center;
+}
+
+.logo-slider {
+  padding: 10px 0px;
+  overflow: hidden;
+  width: 90%;
+  margin: 0 auto;
+  position: relative;
+  display: flex;
+  border-radius: 10px;
+  box-shadow: 0px 0px 11px 3px rgba(0, 0, 0, 0.2);
+}
+
+.logo-slider:hover div {
+  animation-play-state: paused;
+}
+
+.logo-slider div {
+  display: flex;
+  position: relative;
+  align-items: center;
+  animation: marquee 15s linear infinite;
+  justify-content: space-around;
+}
+
+.logo-slider div img {
+  display: block;
+  min-width: 100px;
+  aspect-ratio: 1;
+  height: 60px;
+  margin: 0 2vw;
+  filter: grayscale(100);
+}
+
+.logo-slider div img:hover {
+  filter: grayscale(0);
+}
+
+#bmw,
+#bmw2,
+#mercedes,
+#mercedes2,
+#skoda,
+#skoda2,
+#subaru,
+#subaru2,
+#toyota,
+#toyota2,
+#vw,
+#vw2 {
+  height: 80px;
+  width: 50px;
+}
+
+#chevrolet,
+#chevrolet2 {
+  height: 120px;
+  width: 200px;
+}
+
+#hyundai,
+#hyundai2 {
+  height: 100px;
+  width: 200px;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
